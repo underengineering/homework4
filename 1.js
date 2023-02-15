@@ -3,5 +3,8 @@
     */
 
 const array = [6, 9, 7, 5, 7, 9, 5, 3, 7, 9];
-const maxValue = Math.max(...array);
+let maxValue = -Infinity;
+for (const value of array)
+    maxValue = Math.max(maxValue, value);
+
 console.log("Максимальное число:", maxValue);
